@@ -65,40 +65,7 @@ class ViewController: UIViewController,GIDSignInUIDelegate,GIDSignInDelegate ,SF
         print("Error Google SignIn:" + "\(error)")
 
     }
-   
-    
-    //MARK: button action
-    @IBAction func btnShareClicked(_ sender: AnyObject) {
-        print("share it")
-        
-        let urlComponent = NSURLComponents(string: "https://plus.google.com/share")
-        //urlComponent?.queryItems = NSURLQueryItem(name: "url", value: )
-      //
-        /*
-         // Construct the Google+ share URL
-         NSURLComponents* urlComponents = [[NSURLComponents alloc]
-         initWithString:@"https://plus.google.com/share"];
-         urlComponents.queryItems = @[[[NSURLQueryItem alloc]
-         initWithName:@"url"
-         value:[shareURL absoluteString]]];
-         NSURL* url = [urlComponents URL];
-         
-         if ([SFSafariViewController class]) {
-         // Open the URL in SFSafariViewController (iOS 9+)
-         SFSafariViewController* controller = [[SFSafariViewController alloc]
-         initWithURL:url];
-         controller.delegate = self;
-         [self presentViewController:controller animated:YES completion:nil];
-         } else {
-         // Open the URL in the device's browser
-         [[UIApplication sharedApplication] openURL:url];
-         }
-         
-         }
-
-         
-         */
-        
+  
     }
         
 }
