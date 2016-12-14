@@ -10,7 +10,7 @@ import UIKit
 import GoogleSignIn
 import Google
 import  SafariServices
-class ViewController: UIViewController,GIDSignInUIDelegate,GIDSignInDelegate ,SFSafariViewControllerDelegate{
+class ViewController: UIViewController,GIDSignInUIDelegate,GIDSignInDelegate{
 
     
     //MARK: View controller life cycle
@@ -33,7 +33,7 @@ class ViewController: UIViewController,GIDSignInUIDelegate,GIDSignInDelegate ,SF
     // MARK:- funtion for google signIn
     func googleLogin() {
         
-        GIDSignIn.sharedInstance().clientID = "605193507438-bo1124fie93ahroc6733smgo7c4n1v31.apps.googleusercontent.com"
+        GIDSignIn.sharedInstance().clientID = "Your_Google_Client_ID"
         var configureError: NSError?
         GGLContext.sharedInstance().configureWithError(&configureError)
         assert(configureError == nil, "Error configuring Google services: \(configureError)")
